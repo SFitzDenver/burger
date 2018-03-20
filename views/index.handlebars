@@ -1,21 +1,19 @@
 <h1>Eat-Da-Burger!</h1>
 
-<ul>
-  {{#each burgers}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-
-<h4>Enter a burger you want to eat and click the "Submit" button</h4>
+<24>Enter a burger you want to eat and click the "Submit" button</h4>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca"></label>
-    <input type="text" id="ca" name="name">
+    <label for="burger"></label>
+    <input type="text" id="burger" name="name">
   </div>
 
-  <button type="submit">Search Burger</button>
+  <button type="submit">Submit</button>
 </form>
+
+
+<ul>
+  {{#each burgers}}
+  {{/each}}
+</ul>
