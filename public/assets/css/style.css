@@ -1,4 +1,4 @@
-li {
+/*li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
@@ -16,4 +16,28 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+*/
+
+body {
+	background-color: #dfc12a;
+}
+
+img {
+	height: : 100px;
+	width: 100px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+/*	width: 30%;*/
+}
+
+h4, h1 {
+	text-align: center;
+}
+
+#burger, button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
