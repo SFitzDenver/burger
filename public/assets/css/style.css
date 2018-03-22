@@ -41,3 +41,15 @@ h4, h1 {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.toEat {
+	float: left;
+	padding-left: 200px;
+	text-align: center;
+}
+
+.devoured {
+	float: right;
+	padding-right: 200px;
+	text-align: center;
+}

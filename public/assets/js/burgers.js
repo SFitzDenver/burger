@@ -16,6 +16,23 @@ $(function() {
 			location.reload();
 		}
 		);
+	});
+});
+
+$(function() {
+	// POST request
+	$(".devour-button").on("click", function(event) {
+		event.preventDefault();
+		var id = $(this).data("id");
+
+		$.ajax(`/burgers/${id}`, {
+			method: "PUT"
+		}).then(
+		function() {
+			console.log("devoured it");
+			location.reload();
+		}
+		);
 		});
 	});
 

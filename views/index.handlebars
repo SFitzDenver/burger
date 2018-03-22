@@ -13,13 +13,32 @@
   <button type="submit">Submit</button>
 </form>
 
-<h2>Burgers to eat...</h2>
+<div class="toEat">
+	<h2>Burgers to eat...</h2>
 
-<ul>
-  {{#each burgers}}
-  {{/each}}
-</ul>
-
+		<ul>
+  			{{#each burgers}}
+  				{{#unless devoured}}
+  					<li>
+  						<input placeholder="{{this.burger_name}}" type="text"><button class="devour-button" data-id="{{this.id}}">Devour It!</button>
+  					</li>
+  				{{/unless}}
+  			{{/each}}
+		</ul>
+</div>
 {{!-- <button type="submit">Devour it!</button>
  --}}
-<h2>Burgers devoured...</h2>
+
+<div class="devoured">
+	<h2>Burgers devoured...</h2>
+
+		<ul>
+ 			{{#each burgers}}
+  				{{#if devoured}}
+  					<li>
+  						<input placeholder="{{this.burger_name}}" type="text">
+  					</li>
+  				{{/if}}
+  			{{/each}}
+		</ul>
+</div>
