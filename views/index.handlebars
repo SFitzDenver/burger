@@ -20,7 +20,8 @@
   			{{#each burgers}}
   				{{#unless devoured}}
   					<li>
-  						<input placeholder="{{this.burger_name}}" type="text"><button class="devour-button" data-id="{{this.id}}">Devour It!</button>
+  						<input placeholder="{{this.burger_name}}" type="text">
+  						<button class="devour-button" data-id="{{this.id}}">Devour It!</button>
   					</li>
   				{{/unless}}
   			{{/each}}
